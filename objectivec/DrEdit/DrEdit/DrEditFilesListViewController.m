@@ -27,8 +27,8 @@
 
 // Constants used for OAuth 2.0 authorization.
 static NSString *const kKeychainItemName = @"iOSDriveSample: Google Drive";
-static NSString *const kClientId = @"<CLIENT_ID>";
-static NSString *const kClientSecret = @"<CLIENT_SECRET>";
+static NSString *const kClientId = @"853135828925-v569qcv5710dg7ioofb9b7f8meq0mka9.apps.googleusercontent.com";
+static NSString *const kClientSecret = @"rzUyr-DcOWDmj35V9rjySRgB";
 
 
 @interface DrEditFilesListViewController ()
