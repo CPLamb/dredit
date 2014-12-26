@@ -27,8 +27,8 @@
 
 // Constants used for OAuth 2.0 authorization.
 static NSString *const kKeychainItemName = @"iOSDriveSample: Google Drive";
-static NSString *const kClientId = @"853135828925-4l4pchcit15pu76adkm5ud8d4tpcpj4h.apps.googleusercontent.com";
-static NSString *const kClientSecret = @"s3QqHAROvMcinn_mlM67jSrH";
+static NSString *const kClientId = @"853135828925-8t9bfsueorssgrv9jtqka6gq0o8vb4vr.apps.googleusercontent.com";
+static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
 
 
 @interface DrEditFilesListViewController ()
@@ -142,6 +142,7 @@ static NSString *const kClientSecret = @"s3QqHAROvMcinn_mlM67jSrH";
   }
 }
 
+// delegate method
 - (NSInteger)didUpdateFileWithIndex:(NSInteger)index
                           driveFile:(GTLDriveFile *)driveFile {
   if (index == -1) {
@@ -222,9 +223,7 @@ static NSString *const kClientSecret = @"s3QqHAROvMcinn_mlM67jSrH";
     [self dismissModalViewControllerAnimated:YES];
     if (error == nil) {
         [self isAuthorizedWithAuthentication:auth];
-        // Stackoverflow solution
-  //      [self.parentViewController dismissViewControllerAnimated:NO completion:nil];
-  //      [viewController removeFromParentViewController];
+
     }
 }
 
@@ -238,7 +237,12 @@ static NSString *const kClientSecret = @"s3QqHAROvMcinn_mlM67jSrH";
 
 - (void)loadDriveFiles {
   GTLQueryDrive *query = [GTLQueryDrive queryForFilesList];
-  query.q = @"mimeType = 'text/plain'";
+  
+// different file MIME types
+  // query.q = @"mimeType = 'text/plain'";
+  // query.q = @"mimeType = 'image/jpeg'";
+  // query.q = @"mimeType = 'application/msword'";
+  query.q = @"mimeType = 'application/vnd.google-apps.spreadsheet'";
   
   UIAlertView *alert = [DrEditUtilities showLoadingMessageWithTitle:@"Loading files"
                                                            delegate:self];

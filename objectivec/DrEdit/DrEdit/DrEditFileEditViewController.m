@@ -161,7 +161,7 @@
     NSData *fileContent =
     [self.textView.text dataUsingEncoding:NSUTF8StringEncoding];
     uploadParameters = 
-    [GTLUploadParameters uploadParametersWithData:fileContent MIMEType:@"text/plain"];
+      [GTLUploadParameters uploadParametersWithData:fileContent MIMEType:@"text/plain"];
   }
   
   self.driveFile.title = self.updatedTitle;
