@@ -210,8 +210,6 @@
 		9F7CDD6F15FA5C7E0057FC5E = {
 			isa = PBXGroup;
 			children = (
-				9F7CDE5E15FA6A110057FC5E /* SystemConfiguration.framework */,
-				9F7CDE5C15FA6A010057FC5E /* Security.framework */,
 				9F7CDD8415FA5C7E0057FC5E /* DrEdit */,
 				9F7CDD7D15FA5C7E0057FC5E /* Frameworks */,
 				9F7CDD7B15FA5C7E0057FC5E /* Products */,
@@ -229,6 +227,8 @@
 		9F7CDD7D15FA5C7E0057FC5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F7CDE5C15FA6A010057FC5E /* Security.framework */,
+				9F7CDE5E15FA6A110057FC5E /* SystemConfiguration.framework */,
 				9F7CDD7E15FA5C7E0057FC5E /* UIKit.framework */,
 				9F7CDD8015FA5C7E0057FC5E /* Foundation.framework */,
 				9F7CDD8215FA5C7E0057FC5E /* CoreGraphics.framework */,
@@ -239,8 +239,6 @@
 		9F7CDD8415FA5C7E0057FC5E /* DrEdit */ = {
 			isa = PBXGroup;
 			children = (
-				9F7CDDFF15FA68890057FC5E /* Drive API */,
-				9F7CDD9E15FA64460057FC5E /* Client Library */,
 				9F7CDD8D15FA5C7E0057FC5E /* DrEditAppDelegate.h */,
 				9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */,
 				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
@@ -252,6 +250,8 @@
 				9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */,
 				9F7CDE6A15FA933E0057FC5E /* DrEditFileEditDelegate.h */,
 				9F7CDD8515FA5C7E0057FC5E /* Supporting Files */,
+				9F7CDD9E15FA64460057FC5E /* Client Library */,
+				9F7CDDFF15FA68890057FC5E /* Drive API */,
 			);
 			path = DrEdit;
 			sourceTree = "<group>";

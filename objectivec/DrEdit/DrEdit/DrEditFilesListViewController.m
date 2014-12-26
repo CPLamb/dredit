@@ -27,8 +27,8 @@
 
 // Constants used for OAuth 2.0 authorization.
 static NSString *const kKeychainItemName = @"iOSDriveSample: Google Drive";
-static NSString *const kClientId = @"853135828925-v569qcv5710dg7ioofb9b7f8meq0mka9.apps.googleusercontent.com";
-static NSString *const kClientSecret = @"rzUyr-DcOWDmj35V9rjySRgB";
+static NSString *const kClientId = @"853135828925-4l4pchcit15pu76adkm5ud8d4tpcpj4h.apps.googleusercontent.com";
+static NSString *const kClientSecret = @"s3QqHAROvMcinn_mlM67jSrH";
 
 
 @interface DrEditFilesListViewController ()
@@ -182,6 +182,7 @@ static NSString *const kClientSecret = @"rzUyr-DcOWDmj35V9rjySRgB";
 
 - (IBAction)authButtonClicked:(id)sender {
   if (!self.isAuthorized) {
+      NSLog(@"SIGNing IN!");
     // Sign in.
     SEL finishedSelector = @selector(viewController:finishedWithAuth:error:);
     GTMOAuth2ViewControllerTouch *authViewController = 
@@ -206,6 +207,7 @@ static NSString *const kClientSecret = @"rzUyr-DcOWDmj35V9rjySRgB";
 }
 
 - (IBAction)refreshButtonClicked:(id)sender {
+    NSLog(@"Refresh me PLEASE!");
   [self loadDriveFiles];
 }
 
@@ -217,10 +219,13 @@ static NSString *const kClientSecret = @"rzUyr-DcOWDmj35V9rjySRgB";
 - (void)viewController:(GTMOAuth2ViewControllerTouch *)viewController
       finishedWithAuth:(GTMOAuth2Authentication *)auth
                  error:(NSError *)error {
-  [self dismissModalViewControllerAnimated:YES];
-  if (error == nil) {
-    [self isAuthorizedWithAuthentication:auth];
-  }
+    [self dismissModalViewControllerAnimated:YES];
+    if (error == nil) {
+        [self isAuthorizedWithAuthentication:auth];
+        // Stackoverflow solution
+  //      [self.parentViewController dismissViewControllerAnimated:NO completion:nil];
+  //      [viewController removeFromParentViewController];
+    }
 }
 
 - (void)isAuthorizedWithAuthentication:(GTMOAuth2Authentication *)auth {

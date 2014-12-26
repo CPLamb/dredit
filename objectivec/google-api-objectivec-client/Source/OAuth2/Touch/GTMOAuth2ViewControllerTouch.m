@@ -730,30 +730,30 @@ static Class gSignInClass = Nil;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-  [self notifyWithName:kGTMOAuth2WebViewStoppedLoading
-               webView:webView
-                  kind:kGTMOAuth2WebViewFinished];
-
-  NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-  if ([title length] > 0) {
-    [signIn_ titleChanged:title];
-  } else {
+    [self notifyWithName:kGTMOAuth2WebViewStoppedLoading
+                 webView:webView
+                    kind:kGTMOAuth2WebViewFinished];
+    
+    NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    if ([title length] > 0) {
+        [signIn_ titleChanged:title];
+    } else {
 #if DEBUG
-    // Verify that Javascript is enabled
-    NSString *result = [webView stringByEvaluatingJavaScriptFromString:@"1+1"];
-    NSAssert([result integerValue] == 2, @"GTMOAuth2: Javascript is required");
+        // Verify that Javascript is enabled
+        NSString *result = [webView stringByEvaluatingJavaScriptFromString:@"1+1"];
+        NSAssert([result integerValue] == 2, @"GTMOAuth2: Javascript is required");
 #endif
-  }
-
-  if (self.request && [self.initialHTMLString length] > 0) {
-    // The request was pending.
-    [self setInitialHTMLString:nil];
-    [self.webView loadRequest:self.request];
-  } else {
-    [signIn_ cookiesChanged:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
-
-    [self updateUI];
-  }
+    }
+    
+    if (self.request && [self.initialHTMLString length] > 0) {
+        // The request was pending.
+        [self setInitialHTMLString:nil];
+        [self.webView loadRequest:self.request];
+    } else {
+        [signIn_ cookiesChanged:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
+        
+        [self updateUI];
+    }
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
