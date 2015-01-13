@@ -120,7 +120,7 @@ static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
   GTLDriveFile *file = [self.driveFiles objectAtIndex:indexPath.row];
-  cell.textLabel.text = file.title;
+    cell.textLabel.text = file.title;
   return cell;
 }
 
@@ -187,7 +187,7 @@ static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
     // Sign in.
     SEL finishedSelector = @selector(viewController:finishedWithAuth:error:);
     GTMOAuth2ViewControllerTouch *authViewController = 
-      [[GTMOAuth2ViewControllerTouch alloc] initWithScope:kGTLAuthScopeDriveFile
+      [[GTMOAuth2ViewControllerTouch alloc] initWithScope:kGTLAuthScopeDrive  // kGTLAuthScopeDriveFile
                                                  clientID:kClientId
                                              clientSecret:kClientSecret
                                          keychainItemName:kKeychainItemName
@@ -239,10 +239,11 @@ static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
   GTLQueryDrive *query = [GTLQueryDrive queryForFilesList];
   
 // different file MIME types
+  // query.q = @"";
   // query.q = @"mimeType = 'text/plain'";
   // query.q = @"mimeType = 'image/jpeg'";
   // query.q = @"mimeType = 'application/msword'";
-  query.q = @"mimeType = 'application/vnd.google-apps.spreadsheet'";
+  query.q = @"mimeType = 'application/vnd.google-apps.spreadsheet'";        // display spreadsheets ONLY
   
   UIAlertView *alert = [DrEditUtilities showLoadingMessageWithTitle:@"Loading files"
                                                            delegate:self];
@@ -256,6 +257,7 @@ static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
       }
       [self.driveFiles removeAllObjects];
       [self.driveFiles addObjectsFromArray:files.items];
+ //       NSLog(@"filesList = %@", files.items.description);
       [self.tableView reloadData];
     } else {
       NSLog(@"An error occurred: %@", error);

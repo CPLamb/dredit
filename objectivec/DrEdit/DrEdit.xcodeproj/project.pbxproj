@@ -16,35 +16,35 @@
 		9F7CDD9215FA5C7E0057FC5E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */; };
 		9F7CDD9515FA5C7E0057FC5E /* DrEditFilesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */; };
 		9F7CDD9815FA5C7E0057FC5E /* DrEditFileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDD9715FA5C7E0057FC5E /* DrEditFileEditViewController.m */; };
-		9F7CDDE115FA687D0057FC5E /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA515FA687D0057FC5E /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE215FA687D0057FC5E /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA715FA687D0057FC5E /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE315FA687D0057FC5E /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA915FA687D0057FC5E /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE415FA687D0057FC5E /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAB15FA687D0057FC5E /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE515FA687D0057FC5E /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAD15FA687D0057FC5E /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE615FA687D0057FC5E /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAF15FA687D0057FC5E /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE715FA687D0057FC5E /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB115FA687D0057FC5E /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE815FA687D0057FC5E /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB315FA687D0057FC5E /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDE915FA687D0057FC5E /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB515FA687D0057FC5E /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDEA15FA687D0057FC5E /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB715FA687D0057FC5E /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDEB15FA687D0057FC5E /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB915FA687D0057FC5E /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDEC15FA687D0057FC5E /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBC15FA687D0057FC5E /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDED15FA687D0057FC5E /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBE15FA687D0057FC5E /* GTLBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDEE15FA687D0057FC5E /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC015FA687D0057FC5E /* GTMHTTPFetcherService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDEF15FA687D0057FC5E /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC215FA687D0057FC5E /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF015FA687D0057FC5E /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC415FA687D0057FC5E /* GTMHTTPFetcherLogging.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF115FA687D0057FC5E /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC615FA687D0057FC5E /* GTMHTTPFetchHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF215FA687D0057FC5E /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC815FA687D0057FC5E /* GTMHTTPUploadFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF315FA687D0057FC5E /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCA15FA687D0057FC5E /* GTMGatherInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF415FA687D0057FC5E /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCC15FA687D0057FC5E /* GTMMIMEDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF515FA687D0057FC5E /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCE15FA687D0057FC5E /* GTMReadMonitorInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF615FA687D0057FC5E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD215FA687D0057FC5E /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF715FA687D0057FC5E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD415FA687D0057FC5E /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF815FA687D0057FC5E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD615FA687D0057FC5E /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDF915FA687D0057FC5E /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD815FA687D0057FC5E /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDFA15FA687D0057FC5E /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDA15FA687D0057FC5E /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDE115FA687D0057FC5E /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA515FA687D0057FC5E /* GTLObject.m */; };
+		9F7CDDE215FA687D0057FC5E /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA715FA687D0057FC5E /* GTLQuery.m */; };
+		9F7CDDE315FA687D0057FC5E /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDA915FA687D0057FC5E /* GTLBatchQuery.m */; };
+		9F7CDDE415FA687D0057FC5E /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAB15FA687D0057FC5E /* GTLService.m */; };
+		9F7CDDE515FA687D0057FC5E /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAD15FA687D0057FC5E /* GTLBatchResult.m */; };
+		9F7CDDE615FA687D0057FC5E /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDAF15FA687D0057FC5E /* GTLUploadParameters.m */; };
+		9F7CDDE715FA687D0057FC5E /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB115FA687D0057FC5E /* GTLDateTime.m */; };
+		9F7CDDE815FA687D0057FC5E /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB315FA687D0057FC5E /* GTLErrorObject.m */; };
+		9F7CDDE915FA687D0057FC5E /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB515FA687D0057FC5E /* GTLRuntimeCommon.m */; };
+		9F7CDDEA15FA687D0057FC5E /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB715FA687D0057FC5E /* GTLFramework.m */; };
+		9F7CDDEB15FA687D0057FC5E /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDB915FA687D0057FC5E /* GTLJSONParser.m */; };
+		9F7CDDEC15FA687D0057FC5E /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBC15FA687D0057FC5E /* GTLUtilities.m */; };
+		9F7CDDED15FA687D0057FC5E /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDBE15FA687D0057FC5E /* GTLBase64.m */; };
+		9F7CDDEE15FA687D0057FC5E /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC015FA687D0057FC5E /* GTMHTTPFetcherService.m */; };
+		9F7CDDEF15FA687D0057FC5E /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC215FA687D0057FC5E /* GTMHTTPFetcher.m */; };
+		9F7CDDF015FA687D0057FC5E /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC415FA687D0057FC5E /* GTMHTTPFetcherLogging.m */; };
+		9F7CDDF115FA687D0057FC5E /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC615FA687D0057FC5E /* GTMHTTPFetchHistory.m */; };
+		9F7CDDF215FA687D0057FC5E /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDC815FA687D0057FC5E /* GTMHTTPUploadFetcher.m */; };
+		9F7CDDF315FA687D0057FC5E /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCA15FA687D0057FC5E /* GTMGatherInputStream.m */; };
+		9F7CDDF415FA687D0057FC5E /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCC15FA687D0057FC5E /* GTMMIMEDocument.m */; };
+		9F7CDDF515FA687D0057FC5E /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDCE15FA687D0057FC5E /* GTMReadMonitorInputStream.m */; };
+		9F7CDDF615FA687D0057FC5E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD215FA687D0057FC5E /* SBJsonBase.m */; };
+		9F7CDDF715FA687D0057FC5E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD415FA687D0057FC5E /* SBJsonParser.m */; };
+		9F7CDDF815FA687D0057FC5E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD615FA687D0057FC5E /* SBJsonWriter.m */; };
+		9F7CDDF915FA687D0057FC5E /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDD815FA687D0057FC5E /* GTMOAuth2Authentication.m */; };
+		9F7CDDFA15FA687D0057FC5E /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDA15FA687D0057FC5E /* GTMOAuth2SignIn.m */; };
 		9F7CDDFB15FA687D0057FC5E /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDB15FA687D0057FC5E /* GTMOAuth2Window.xib */; };
-		9F7CDDFC15FA687D0057FC5E /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDD15FA687D0057FC5E /* GTMOAuth2WindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9F7CDDFD15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDF15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F7CDDFC15FA687D0057FC5E /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDD15FA687D0057FC5E /* GTMOAuth2WindowController.m */; };
+		9F7CDDFD15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDDDF15FA687D0057FC5E /* GTMOAuth2ViewControllerTouch.m */; };
 		9F7CDDFE15FA687D0057FC5E /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7CDDE015FA687D0057FC5E /* GTMOAuth2ViewTouch.xib */; };
 		9F7CDE4A15FA69CB0057FC5E /* GTLDriveAbout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2715FA69CB0057FC5E /* GTLDriveAbout.m */; };
 		9F7CDE4B15FA69CB0057FC5E /* GTLDriveApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7CDE2915FA69CB0057FC5E /* GTLDriveApp.m */; };
@@ -241,7 +241,6 @@
 			children = (
 				9F7CDD8D15FA5C7E0057FC5E /* DrEditAppDelegate.h */,
 				9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */,
-				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
 				9F7CDD9315FA5C7E0057FC5E /* DrEditFilesListViewController.h */,
 				9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */,
 				9F7CDD9615FA5C7E0057FC5E /* DrEditFileEditViewController.h */,
@@ -249,6 +248,7 @@
 				9F7CDE6015FA6EF80057FC5E /* DrEditUtilities.h */,
 				9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */,
 				9F7CDE6A15FA933E0057FC5E /* DrEditFileEditDelegate.h */,
+				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
 				9F7CDD8515FA5C7E0057FC5E /* Supporting Files */,
 				9F7CDD9E15FA64460057FC5E /* Client Library */,
 				9F7CDDFF15FA68890057FC5E /* Drive API */,
@@ -569,6 +569,8 @@
 		9F7CDD9C15FA5C7E0057FC5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
 				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
@@ -580,6 +582,8 @@
 		9F7CDD9D15FA5C7E0057FC5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
 				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
