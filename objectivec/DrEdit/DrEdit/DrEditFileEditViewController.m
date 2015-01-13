@@ -132,14 +132,26 @@
 }
 
 - (void)loadFileContent {
+    NSLog(@"GONNA TRY n LOAD this files content= %@", self.driveFile);
+    
   UIAlertView *alert = [DrEditUtilities showLoadingMessageWithTitle:@"Loading file content"
                                                            delegate:self];
-  GTMHTTPFetcher *fetcher =
-  [self.driveService.fetcherService fetcherWithURLString:self.driveFile.downloadUrl];
+    
+// Trying to access spreadsheet files using exportLinks metadata
+    GTLDriveFileExportLinks *myExportLinks = self.driveFile.exportLinks;
+    
+    NSString *spreadsheetURL = [[myExportLinks additionalProperties]objectForKey:@"text/csv"];
+    NSLog(@"The export LINKS %@", myExportLinks);
+    NSLog(@"-----------------------");
+    NSLog(@"AND the WINNING URL is = %@", spreadsheetURL);
+    
+    GTMHTTPFetcher *fetcher = [self.driveService.fetcherService fetcherWithURLString:spreadsheetURL];
+    [self.driveService.fetcherService fetcherWithURLString:self.driveFile.downloadUrl];
   
   [fetcher beginFetchWithCompletionHandler:^(NSData *data, NSError *error) {
     [alert dismissWithClickedButtonIndex:0 animated:YES];
     if (error == nil) {
+        NSLog(@"It loaded something");
       NSString* fileContent = [[NSString alloc] initWithData:data
                                                     encoding:NSUTF8StringEncoding];
       self.textView.text = fileContent;
