@@ -239,11 +239,9 @@
 		9F7CDD8415FA5C7E0057FC5E /* DrEdit */ = {
 			isa = PBXGroup;
 			children = (
-				9F7CDDFF15FA68890057FC5E /* Drive API */,
-				9F7CDD9E15FA64460057FC5E /* Client Library */,
+				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
 				9F7CDD8D15FA5C7E0057FC5E /* DrEditAppDelegate.h */,
 				9F7CDD8E15FA5C7E0057FC5E /* DrEditAppDelegate.m */,
-				9F7CDD9015FA5C7E0057FC5E /* MainStoryboard.storyboard */,
 				9F7CDD9315FA5C7E0057FC5E /* DrEditFilesListViewController.h */,
 				9F7CDD9415FA5C7E0057FC5E /* DrEditFilesListViewController.m */,
 				9F7CDD9615FA5C7E0057FC5E /* DrEditFileEditViewController.h */,
@@ -251,6 +249,8 @@
 				9F7CDE6015FA6EF80057FC5E /* DrEditUtilities.h */,
 				9F7CDE6115FA6EF80057FC5E /* DrEditUtilities.m */,
 				9F7CDE6A15FA933E0057FC5E /* DrEditFileEditDelegate.h */,
+				9F7CDD9E15FA64460057FC5E /* Client Library */,
+				9F7CDDFF15FA68890057FC5E /* Drive API */,
 				9F7CDD8515FA5C7E0057FC5E /* Supporting Files */,
 			);
 			path = DrEdit;
@@ -572,6 +572,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
 				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -583,6 +584,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrEdit/DrEdit-Prefix.pch";
 				INFOPLIST_FILE = "DrEdit/DrEdit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

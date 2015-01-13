@@ -27,8 +27,8 @@
 
 // Constants used for OAuth 2.0 authorization.
 static NSString *const kKeychainItemName = @"iOSDriveSample: Google Drive";
-static NSString *const kClientId = @"<CLIENT_ID>";
-static NSString *const kClientSecret = @"<CLIENT_SECRET>";
+static NSString *const kClientId = @"853135828925-8t9bfsueorssgrv9jtqka6gq0o8vb4vr.apps.googleusercontent.com";
+static NSString *const kClientSecret = @"F2CVzLCS5PQj2T4JazioSL8-";
 
 
 @interface DrEditFilesListViewController ()
@@ -185,7 +185,7 @@ static NSString *const kClientSecret = @"<CLIENT_SECRET>";
     // Sign in.
     SEL finishedSelector = @selector(viewController:finishedWithAuth:error:);
     GTMOAuth2ViewControllerTouch *authViewController = 
-      [[GTMOAuth2ViewControllerTouch alloc] initWithScope:kGTLAuthScopeDriveFile
+      [[GTMOAuth2ViewControllerTouch alloc] initWithScope:kGTLAuthScopeDrive      // kGTLAuthScopeDriveFile
                                                  clientID:kClientId
                                              clientSecret:kClientSecret
                                          keychainItemName:kKeychainItemName
@@ -233,7 +233,10 @@ static NSString *const kClientSecret = @"<CLIENT_SECRET>";
 
 - (void)loadDriveFiles {
   GTLQueryDrive *query = [GTLQueryDrive queryForFilesList];
-  query.q = @"mimeType = 'text/plain'";
+    query.q = @"mimeType = 'application/vnd.google-apps.spreadsheet'";
+  //  query.q = @"mimeType ='application/vnd.google-apps.spreadsheet' and fullText contains 'text/csv'";      // display spreadsheets & csv export???
+   // query.q = @"mimeType ='application/vnd.google-apps.spreadsheet' and exportLinks = application/pdf";      // display spreadsheets & csv export???
+  //  query.q = @"mimeType = 'text/plain'";
   
   UIAlertView *alert = [DrEditUtilities showLoadingMessageWithTitle:@"Loading files"
                                                            delegate:self];
